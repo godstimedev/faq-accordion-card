@@ -75,6 +75,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  overflow: hidden;
 }
 
 .title {
@@ -185,6 +186,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    margin-top: 2rem;
   }
   .title {
     font-size: 1.2rem;
