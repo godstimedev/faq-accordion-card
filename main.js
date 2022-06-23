@@ -1,13 +1,7 @@
-document.querySelectorAll(".question").forEach((question) =>
-  question.addEventListener("click", () => {
-    if (question.parentNode.classList.contains("acive")) {
-      question.parentNode.classList.toggle("active");
-    } else {
-      document
-        .querySelectorAll(".question")
-        .forEach((question) => question.parentNode.classList.remove("active"));
+const faqs = document.querySelectorAll(".faq");
 
-      question.parentNode.classList.add("active");
-    }
-  })
-);
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("active");
+  });
+});
